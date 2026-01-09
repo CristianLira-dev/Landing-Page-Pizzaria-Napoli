@@ -1,0 +1,2 @@
+# Landing-Page-Pizzaria-Napoli
+Landing Page moderna para a pizzaria "Napoli", desenvolvida com React e Vite. Destaque para a renderização dinâmica do cardápio via dados (JSON), arquitetura de componentes reutilizáveis e design system consistente com variáveis CSS. Interface totalmente responsiva e performática.
