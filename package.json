@@ -1,7 +1,7 @@
 {
   "name": "landing-page-pizzaria-napoli",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -23,6 +23,8 @@
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
+    "sass": "^1.97.2",
+    "sass-embedded": "^1.97.2",
     "vite": "^5.4.1"
   }
 }
