@@ -1,0 +1,22 @@
+@import "../../assets/css/index.css";
+
+.botao {
+    background-color: var(--cor-vinho-escuro);
+    font-family: var(--semibold);
+    font-size: var(--f1);
+    padding: 12px 24px;
+    border-radius: 12px;
+    color: var(--cor-branco);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra discreta de descanso */
+}
+.botao:hover {
+    background-color: var(--cor-vinho-medio, #851e49); 
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(71, 10, 36, 0.4); 
+}
+.botao:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(71, 10, 36, 0.2);
+    filter: brightness(0.9);
+}

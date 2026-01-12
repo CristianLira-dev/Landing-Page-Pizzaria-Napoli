@@ -1,0 +1,43 @@
+@import '../../assets/css/index.css';
+
+.SectionHero {
+  width: 100%;
+  height: 86.3dvh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: flex-start; 
+  padding: 80px 20px 0 20px; 
+  /* background-image: url(...); */
+  /* background-size: cover; */
+  text-align: center;
+}
+
+.titulo {
+  font-family: var(--bold);
+  font-size: var(--f10);
+  line-height: 1.1;
+  color: var(--cor-vinho-escuro);
+  margin: 0 0 16px 0;
+  max-width: 900px;
+}
+
+.subtitulo {
+  font-family: var(--light);
+  font-size: var(--f3); /* Menor que o título, mas legível */
+  color: #555;
+  font-weight: 400;
+  margin: 0 0 40px 0; /* Espaço generoso antes do Botão */
+  max-width: 600px; /* Cria uma leitura confortável */
+  line-height: 1.5;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+  .SectionHero {
+    padding: 40px 0 0 0; /* Menos espaço no mobile */
+    height: auto; /* Permite crescer se o texto for longo */
+    min-height: 80dvh;
+    padding: 0 0 40px 0;
+  }
+}

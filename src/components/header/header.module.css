@@ -4,21 +4,49 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 50px;
+  margin: 0 100px;
   overflow-y: hidden;
+  max-width: 1920px;
+  padding: 24px;
 }
 
 .logo{
   width: 150px;
-  height: 100px;
+  cursor: pointer;
+  user-select: none;
 }
 
-ul{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 8px;
-  text-decoration: none;
-  list-style-type: none;
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.linkNav {
+    font-family: var(--light);
+    color: var(--cor-vinho-escuro);
+    text-decoration: none;
+    font-size: var(--f2);
+    position: relative; 
+    transition: all 0.3s;
+}
+.linkNav::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--cor-vinho-escuro); 
+    transition: width 0.3s ease-in-out;
+}
+.linkNav:hover {
+    opacity: 0.8; 
+}
+
+.linkNav:hover::after {
+    width: 100%;
 }

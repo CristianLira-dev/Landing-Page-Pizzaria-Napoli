@@ -14,7 +14,6 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
-  background-color: var(--cor-bege);
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -22,7 +21,6 @@ html {
 body {
   margin: 0;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: var(--cor-bege);
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -49,7 +47,7 @@ body.bloqueado {
 
 ::selection {
   color: var(--cor-branco);
-  background-color: var(--cor-verde);
+  background-color: var(--cor-vinho-escuro);
 }
 
 a,
