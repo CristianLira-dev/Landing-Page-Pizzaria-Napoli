@@ -15,10 +15,10 @@ function Header () {
             <a className={styles.linkNav} href="#home">Início</a>
           </li>
           <li>
-            <a className={styles.linkNav} href="#cardapio">Cardápio</a>
+            <a className={styles.linkNav} href="#sobre">Sobre Nós</a>
           </li>
           <li>
-            <a className={styles.linkNav} href="#sobre">Sobre</a>
+            <a className={styles.linkNav} href="#cardapio">Cardápio</a>
           </li>
           <li>
             <a className={styles.linkNav} href="#contato">Contato</a>

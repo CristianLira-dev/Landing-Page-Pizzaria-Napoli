@@ -1,26 +1,29 @@
+@import "../../assets/css/index.css"; 
+
 .pizzaContainer {
-  position: fixed; /* Fixa na tela para flutuar sobre tudo */
+  position: fixed; 
   top: 50%;
   left: 0;
   width: 100%;
   height: 100vh;
-  pointer-events: none; /* Permite clicar nos botões atrás da pizza */
-  z-index: 50; /* Alto z-index para ficar acima do conteúdo */
+  pointer-events: none;
+  z-index: 50;
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Começa alinhado no topo */
+  align-items: flex-start;
 }
 
 .pizzaImage {
-  width: 50vw; /* Tamanho responsivo inicial */
+  animation: girando 100s infinite linear;
+  width: 50vw;
   max-width: 900px;
-  margin-top: 5vh; /* Posição inicial visual na Hero */
+  margin-top: 10vh;
   filter: drop-shadow(0px 54px 55px rgba(0, 0, 0, 0.25)) 
-          drop-shadow(0px -12px 30px rgba(0, 0, 0, 0.12)) 
+          drop-shadow(0px -12px 30px rgba(0, 0, 0, 0.12))   
           drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.12)) 
           drop-shadow(0px 12px 13px rgba(0, 0, 0, 0.17)) 
           drop-shadow(0px -3px 5px rgba(0, 0, 0, 0.09));    
-  will-change: transform; /* Otimiza a GPU */
+  will-change: transform;
 }
 
 @media (max-width: 768px) {

@@ -1,0 +1,14 @@
+@import "../../assets/css/index.css";
+
+.SectionSobre {
+  width: 100%;
+  height: 86.3dvh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: flex-start; 
+  padding: 80px 20px 0 20px; 
+  /* background-image: url(...); */
+  /* background-size: cover; */
+  text-align: center;
+}
