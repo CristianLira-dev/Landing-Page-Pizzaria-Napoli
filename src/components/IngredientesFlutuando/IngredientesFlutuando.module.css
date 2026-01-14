@@ -1,0 +1,30 @@
+@import "../../assets/css/index.css";
+
+.wrapper {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  animation: flutuar 6s ease-in-out infinite;
+  filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.2));
+  will-change: transform; 
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  user-select: none;
+}
+
+@keyframes flutuar {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(3deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
