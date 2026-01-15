@@ -1,9 +1,9 @@
 import tomate from '../images/tomate.png';
 import manjericaoMaior from '../images/manjericao-maior.png';
-import cogumelo from '../images/cogumelo.png';
 import cebolaRoxa from '../images/cebola-roxa.png';
 import azeitona from '../images/azeitona.png';
 import manjericao from '../images/manjericao.png';
+import queijo from "../images/queijo.svg";
 
 const IngredientesData = [
   {
@@ -13,7 +13,7 @@ const IngredientesData = [
     "alt": "Tomate fresco inteiro",
     "size": "270px",
     "position": { "bottom": "1%", "left": "-5%" },
-    "animationDelay": "0.125s"
+    "animationDelay": "2.125s"
   },
   {
     "id": 3,
@@ -26,9 +26,9 @@ const IngredientesData = [
   },
   {
     "id": 4,
-    "name": "cogumelo",
-    "src": cogumelo,
-    "alt": "Cogumelo fresco",
+    "name": "queijo",
+    "src": queijo,
+    "alt": "queijo",
     "size": "80px",
     "position": { "top": "35%", "right": "10%" },
     "animationDelay": "0.5s"

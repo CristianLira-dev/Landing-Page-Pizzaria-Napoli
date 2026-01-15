@@ -1,10 +1,10 @@
 import styles from '../pizza/Pizza.module.css'
-import Marguerita from "../../assets/images/marguerita.png"
+import PizzaMarguerita from "../../assets/images/pizza.png"
 function Pizza() {
     return (
       <div className={styles.pizzaContainer}>
         <img
-          src={Marguerita}
+          src={PizzaMarguerita}
           alt="Pizza Artesanal"
           className={styles.pizzaImage}
         />
