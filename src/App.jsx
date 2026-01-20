@@ -7,7 +7,6 @@ import SectionSobre from './components/sobre/SectionSobre.jsx'
 function App() {  
   return (
     <div>
-      <Pizza />
       <Header />
       <SectionHero />
       <SectionSobre />

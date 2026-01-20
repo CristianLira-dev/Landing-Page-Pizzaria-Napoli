@@ -1,45 +1,22 @@
-/* Importação mantida conforme seu padrão */
-@import "../../assets/css/index.css";
+/* SectionSobre.module.css */
 
+@import "../../assets/css/index.css";
 .sectionSobre {
   width: 100%;
-  min-height: 100dvh; 
+  min-height: 100dvh;
   display: flex;
-  align-items: center; /* Centraliza verticalmente todo o bloco */
-  justify-content: center;
-  padding: 40px 20px;
-  overflow: hidden; /* Evita scroll indesejado se o SVG for muito grande */
+  align-items: center;
+  padding: 60px 20px;
+  overflow: hidden;
 }
 
-/* Container que limita a largura máxima para não esticar demais em telas 4k */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1200px; /* Limite para não esticar demais em telas 4k */
+  margin: 0 auto;
   display: flex;
-  flex-direction: column; /* Mobile First: Empilhado */
-  align-items: center;
-  gap: 3rem; /* Espaço entre a forma e o texto */
-}
-
-/* --- Coluna Visual (A forma) --- */
-.visualColumn {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.blobWrapper {
-  width: 100%;
-  max-width: 500px; /* Tamanho máximo da forma */
-}
-
-.blobIcon {
-  width: 100%;
-  height: auto;
-  display: block;
-  filter: drop-shadow(10px 10px 20px rgba(201, 42, 42, 0.2));
+  flex-direction: column; /* Mobile: Itens um embaixo do outro */
+  gap: 2rem;
 }
 
 .textColumn {
@@ -47,12 +24,12 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  text-align: center;
+  text-align: left; 
 }
 
 .textColumn h1 {
   font-family: var(--bold);
-  font-size: var(--f10);
+  font-size: var(--f10); 
   color: var(--cor-vinho-escuro);
   line-height: 1.2;
 }
@@ -61,26 +38,40 @@
   font-family: var(--light);
   font-size: var(--f2);
   color: #555;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
+.btn {
+  width: 100%; 
+  margin-top: 1rem;
+  display: flex;
+}
+.btn button {
+    width: 100%;
+}
 
-/* --- Media Queries (Desktop e Tablets Grandes) --- */
 @media (min-width: 992px) {
+  .sectionSobre {
+    justify-content: center; 
+  }
+
   .container {
-    flex-direction: row; /* Coloca lado a lado */
-    justify-content: space-between;
+    flex-direction: row; /* Coloca os itens lado a lado */
+    justify-content: flex-end; /* Empurra o conteúdo (textColumn) para a DIREITA */
     align-items: center;
   }
 
-  .visualColumn {
-    width: 45%;
-    justify-content: flex-start; /* Alinha a forma à esquerda */
+  .textColumn {
+    width: 50%; /* Ocupa apenas a metade direita da tela */
+    padding-left: 40px; /* Um respiro visual caso haja uma imagem na esquerda */
+  }
+  .btn {
+    width: auto;
   }
 
-  .textColumn {
-    width: 50%;
-    align-items: flex-start; /* Alinha os itens (botão) à direita */
-    text-align: start;
+  .btn button {
+    width: auto;
+    min-width: 180px;
+    padding: 12px 24px;
   }
 }
