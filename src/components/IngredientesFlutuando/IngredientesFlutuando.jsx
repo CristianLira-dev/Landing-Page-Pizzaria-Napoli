@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './IngredientesFlutuando.module.css';
 
 function IngredientesFlutuando ({ src, alt, size, position, animationDelay }) {

@@ -16,7 +16,7 @@
 
 .pizzaImage {
   animation: girando 100s infinite linear;
-  animation-delay: 1s;
+  animation-delay: 100000s;
   width: 50vw;
   max-width: 900px;
   margin-top: 13vh;

@@ -1,0 +1,110 @@
+@import "../../assets/css/index.css";
+
+.cardRelative {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.popoutImg {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto -90px auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border: 5px solid #fff;
+  transition: transform 0.3s ease;
+}
+
+.cardRelative:hover .popoutImg {
+  transform: scale(1.05) rotate(5deg);
+}
+
+.cardVisual {
+  background-color: var(--cor-branco);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardRelative:hover .cardVisual {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cardBody {
+  padding: 110px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 12px;
+}
+
+.title {
+  font-family: var(--bold);
+  font-size: var(--f4);
+  text-align: center;
+  margin: 0;
+}
+
+.description {
+  font-family: var(--light);
+  font-size: var(--f1);
+  color: var(--cor-escuro-5);
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+  flex: 1;
+}
+
+.actionArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.price {
+  font-family: var(--bold);
+  font-size: var(--f5);
+  color: #e74c3c;
+}
+
+.buyBtn {
+      display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-family: var(--semibold);
+  font-size: var(--f1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+
+.buyBtn:hover {
+  background: linear-gradient(135deg, #c0392b 0%, #a93226 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(231, 76, 60, 0.4);
+}
+
+.buyBtn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3);
+}

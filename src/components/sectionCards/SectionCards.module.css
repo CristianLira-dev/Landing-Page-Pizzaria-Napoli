@@ -1,0 +1,19 @@
+@import "../../assets/css/index.css";
+
+.SectionCards {
+  width: 100%;
+  min-height: 100dvh;
+  padding: 60px 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  
+}
+
+.conteiner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1920px;
+  margin: 5% auto;
+}

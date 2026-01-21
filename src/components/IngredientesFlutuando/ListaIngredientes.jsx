@@ -1,4 +1,3 @@
-import React from 'react';
 import IngredientesFlutuando from './IngredientesFlutuando';
 import styles from './ListaIngredientes.module.css';
 import dadosIngredientes from '../../assets/JSON/ingredientes';
