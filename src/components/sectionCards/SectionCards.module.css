@@ -3,10 +3,9 @@
 .SectionCards {
   width: 100%;
   min-height: 100dvh;
-  padding: 60px 20px;
+  padding: 0 20px;
   overflow: hidden;
   margin: 0 auto;
-  
 }
 
 .conteiner {
@@ -16,4 +15,34 @@
   flex-wrap: wrap;
   max-width: 1920px;
   margin: 5% auto;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tituloSection{
+  font-family: var(--bold);
+  font-size: var(--f9);
+  color: var(--cor-vinho-escuro);
+}
+
+.line{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 5px;
+  border-radius: 32px;
+  background-color: var(--cor-vinho-medio);
+}
+
+.btnCardapio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

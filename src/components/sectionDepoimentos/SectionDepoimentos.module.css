@@ -1,0 +1,129 @@
+@import "../../assets/css/index.css";
+
+.sectionDepoimentos {
+  width: 100%;
+  padding: 80px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.headerSection {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.headerSection h2 {
+  font-family: var(--bold);
+  font-size: var(--f9);
+  color: var(--cor-vinho-escuro);
+  margin-bottom: 1rem;
+}
+
+.headerSection p {
+  font-family: var(--light);
+  font-size: var(--f2);
+  color: var(--cor-escuro-5);
+}
+
+.gridCards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: var(--sombra-postit);
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.05) rotate(0deg) !important; /* Reseta rotação e aumenta */
+  z-index: 2;
+  box-shadow: 5px 10px 20px rgba(0,0,0,0.2);
+}
+
+.cardAmarelo { background-color: var(--postit-amarelo); }
+.cardVerde { background-color: var(--postit-verde); }
+.cardRose { background-color: var(--postit-rose); }
+
+.card:nth-child(1) { transform: rotate(-2deg); }
+.card:nth-child(2) { transform: rotate(3deg); margin-top: 1rem; }
+.card:nth-child(3) { transform: rotate(-1.5deg); }
+
+.pin {
+  width: 40px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.imgWrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+.imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- Texto --- */
+.textoDepoimento {
+  font-family: var(--light);
+  font-style: italic;
+  font-size: 1rem;
+color: var(--cor-escuro-5);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.infoCliente strong {
+  display: block;
+  font-family: var(--bold);
+  color: var(--cor-vinho-escuro);
+  font-size: var(--f2);
+}
+
+/* --- Desktop Breakpoint --- */
+@media (min-width: 992px) {
+  .gridCards {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start; /* Alinha pelo topo para respeitar o margin-top variável */
+    gap: 3rem;
+  }
+  
+  /* Ajuste fino nas rotações para desktop */
+  .card:nth-child(2) {
+    margin-top: 3rem; /* O card do meio fica mais baixo para quebrar a linha reta */
+  }
+}

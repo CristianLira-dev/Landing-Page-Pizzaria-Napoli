@@ -1,0 +1,94 @@
+@import "../../assets/css/index.css";
+
+.SectionPreparo {
+  width: 100%;
+  min-height: 90dvh;
+  display: flex;
+  align-items: center;
+  padding: 60px 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.conteinerCentral {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  z-index: 2;
+}
+
+.colunaTexto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.colunaTexto h2 {
+  font-family: var(--bold);
+  font-size: var(--f9);
+  color: var(--cor-vinho-escuro);
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.colunaTexto p {
+  font-family: var(--light);
+  font-size: var(--f2);
+  color: #555;
+  line-height: 1.5; 
+}
+
+.colunaTexto strong {
+  font-family: var(--bold);
+  color: var(--cor-vinho-escuro);
+}
+
+.colunaTexto em {
+  font-style: italic;
+  font-family: var(--bold);
+  color: var(--cor-vinho-escuro);
+}
+
+.Botao {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.Botao > button, 
+.Botao > a {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .SectionPreparo {
+    justify-content: center;
+  }
+
+  .conteinerCentral {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .colunaTexto {
+    width: 50%; 
+    padding-left: 40px;
+  }
+
+  .Botao {
+    width: auto;
+    justify-content: flex-start;
+  }
+
+  .Botao > button,
+  .Botao > a {
+    width: auto;
+    min-width: 180px;
+  }
+}

@@ -1,12 +1,20 @@
 import styles from "./SectionSobre.module.css";
-import Button from "../button/Button"
+import Button from "../button/Button";
+import Pizza from "../../assets/images/pizza-SectionSobre.png";
 
 function SectionSobre() {
   return (
     <section className={styles.sectionSobre} aria-label="Sobre a Empresa">
       <div className={styles.container}>
+        <img
+          src={Pizza}
+          alt="Pizza Marguerita artesanal com ingredientes frescos"
+          className={styles.pizzaImage}
+          loading="lazy"
+        />
+
         <div className={styles.textColumn}>
-          <h1>Sobre Nós</h1>
+          <h2>Sobre Nós</h2>
           <p>
             Nossa história começou muito antes de abrirmos as portas. Ela veio
             na mala do fundador Luigi, trazida diretamente de Nápoles junto com
@@ -19,7 +27,8 @@ function SectionSobre() {
             verdadeiro sabor italiano. Na Napoli, servimos mais que pizza;
             servimos história.
           </p>
-          <div className={styles.btn}>
+
+          <div className={styles.Botao}>
             <Button>Saiba Mais</Button>
           </div>
         </div>

@@ -18,7 +18,7 @@ const Pizzas = [
     fullDescription:
       "A rainha das pizzas em sua forma mais pura. Massa leve de longa fermentação coberta com molho de tomate pelati italiano, generosa camada de muçarela de búfala, rodelas de tomate fresco e folhas de manjericão aromático. Finalizada com um fio de azeite extra virgem.",
     price: "R$ 59,99",
-    img: Marguerita,
+    img: "",
     alt: "",
   },
   {

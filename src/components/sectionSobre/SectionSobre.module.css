@@ -1,0 +1,103 @@
+/* SectionSobre.module.css */
+@import "../../assets/css/index.css";
+
+.sectionSobre {
+  width: 100%;
+  min-height: 70dvh; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 3rem;
+}
+
+.pizzaImage {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.4));
+}
+
+.textColumn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.textColumn h2 {
+  font-family: var(--bold);
+  font-size: var(--f10);
+  color: var(--cor-vinho-escuro);
+  line-height: 1.2;
+}
+
+.textColumn p {
+  font-family: var(--light);
+  font-size: var(--f2);
+  color: #555;
+  line-height: 1.5; 
+}
+
+.textColumn strong {
+  font-family: var(--bold);
+  color: var(--cor-vinho-escuro);
+}
+
+.Botao {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.Botao > button, 
+.Botao > a {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .sectionSobre {
+    min-height: 60dvh; 
+  }
+
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 4rem; 
+  }
+
+  .pizzaImage {
+    width: 50%; 
+    max-width: 550px; 
+  }
+
+  .textColumn {
+    width: 50%;
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .Botao {
+    width: auto;
+    justify-content: flex-start;
+  }
+
+  .Botao > button,
+  .Botao > a {
+    width: auto;
+    min-width: 180px;
+  }
+}

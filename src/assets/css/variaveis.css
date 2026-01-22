@@ -54,6 +54,11 @@
   --cor-rosado: #cf3659;
   --cor-rosado-escuro: #470c1a;
 
+    --postit-amarelo: #fff9c4; 
+  --postit-verde: #e8f5e9;   
+  --postit-rose: #ffebee;    
+  --sombra-postit: 2px 4px 8px rgba(0, 0, 0, 0.15);
+
   --ease-fluid: cubic-bezier(0.4, 0, 0.2, 1);
   --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
 
