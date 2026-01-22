@@ -44,7 +44,7 @@ ul {
     transition: width 0.3s ease-in-out;
 }
 .linkNav:hover {
-    opacity: 0.8; 
+    opacity: 0.81; 
 }
 
 .linkNav:hover::after {
