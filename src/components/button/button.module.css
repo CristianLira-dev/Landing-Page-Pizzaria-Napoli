@@ -1,7 +1,7 @@
 @import "../../assets/css/index.css";
 
 .botao {
-    background-color: var(--cor-vinho-escuro);
+    background: var(--cor-vinho-escuro);
     font-family: var(--semibold);
     font-size: var(--f1);
     padding: 12px 24px;

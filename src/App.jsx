@@ -6,6 +6,7 @@ import SectionSobre from './components/sectionSobre/SectionSobre.jsx'
 import SectionCards from './components/sectionCards/SectionCards.jsx'
 import SectionPizza from './components/sectionPizza/SectionPizza.jsx'
 import SectionDepoimentos from './components/sectionDepoimentos/SectionDepoimentos.jsx'
+import Footer from './components/footer/Footer.jsx'
 
 function App() {  
   return (
@@ -16,6 +17,7 @@ function App() {
       <SectionCards />
       <SectionSobre />
       <SectionDepoimentos />
+      <Footer />
     </div>
   )
 }
