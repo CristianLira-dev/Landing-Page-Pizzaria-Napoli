@@ -8,10 +8,10 @@ function SectionCards() {
         }
 
     return (
-      <section className={styles.SectionCards}>
+      <section id="SectionCards" className={styles.SectionCards}>
         <div className={styles.header}>
-        <h1 className={styles.tituloSection}>Nossas Pizzas</h1>
-        <hr className={styles.line} />
+          <h1 className={styles.tituloSection}>Nossas Pizzas</h1>
+          <hr className={styles.line} />
         </div>
 
         <div className={styles.conteiner}>
@@ -27,7 +27,7 @@ function SectionCards() {
           ))}
         </div>
         <div className={styles.btnCardapio}>
-        <Button>Ver Cardápio Completo</Button>
+          <Button>Ver Cardápio Completo</Button>
         </div>
       </section>
     );

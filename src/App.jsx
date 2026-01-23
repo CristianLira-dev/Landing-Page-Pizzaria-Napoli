@@ -11,6 +11,7 @@ import Footer from './components/footer/Footer.jsx'
 function App() {  
   return (
     <div>
+      <Pizza />
       <Header />
       <SectionHero />
       <SectionPizza />

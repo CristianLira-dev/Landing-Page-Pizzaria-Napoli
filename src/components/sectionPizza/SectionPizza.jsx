@@ -3,7 +3,7 @@ import Button from "../button/Button";
 
 function SectionPizzas() {
   return (
-    <section className={styles.SectionPreparo} aria-labelledby="titulo-preparo">
+    <section className={styles.SectionPreparo} id="SectionPizzas" aria-labelledby="titulo-preparo">
       <div className={styles.conteinerCentral}>
         <div className={styles.colunaTexto}>
           <h2 id="titulo-preparo">O Segredo da Nossa Fermentação Natural</h2>
