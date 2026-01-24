@@ -16,7 +16,7 @@ const Pizzas = [
     id: 2,
     title: "Marguerita",
     fullDescription:
-      "A rainha das pizzas em sua forma mais pura. Massa leve de longa fermentação coberta com molho de tomate pelati italiano, generosa camada de muçarela de búfala, rodelas de tomate fresco e folhas de manjericão aromático. Finalizada com um fio de azeite extra virgem.",
+      "A rainha das pizzas em sua forma mais pura. Massa coberta com molho de tomate pelati italiano, generosa camada de muçarela de búfala, rodelas de tomate fresco e folhas de manjericão aromático.",
     price: "R$ 59,99",
     img: "",
     alt: "",
@@ -24,8 +24,7 @@ const Pizzas = [
   {
     id: 3,
     title: "Frango com Cebola Roxa",
-    fullDescription:
-      "Sabor leve e sofisticado. Coberta com molho de tomate San Marzano e muçarela, combinada com suculentas fatias de frango grelhado e o toque adocicado de anéis de cebola roxa. Finalizada com ervas frescas e azeite de oliva extra virgem.",
+    fullDescription: "Coberta com molho de tomate San Marzano e muçarela, combinada com suculentas fatias de frango grelhado e o toque adocicado de anéis de cebola roxa.",
     price: "R$ 49,90",
     img: Frango,
     alt: "Pizza de Frango com Cebola Roxa",

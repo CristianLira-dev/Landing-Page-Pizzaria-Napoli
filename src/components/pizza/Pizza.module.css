@@ -28,7 +28,6 @@
 
 @media (max-width: 768px) {
   .pizzaImage {
-    width: 80vw;
-    margin-top: 20vh; /* Ajuste para mobile */
+    display: none;
   }
 }
