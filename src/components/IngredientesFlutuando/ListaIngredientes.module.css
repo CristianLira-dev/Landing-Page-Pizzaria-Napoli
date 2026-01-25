@@ -10,3 +10,9 @@
   pointer-events: none; 
   overflow: hidden; 
 }
+
+@media (max-width: 991px) {
+  .containerLista {
+    display: none;
+  }
+}

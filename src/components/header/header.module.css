@@ -1,52 +1,142 @@
 @import '../../assets/css/index.css';
 
-.headerContainer{
+.headerContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 100px;
-  overflow-y: hidden;
+  padding: 20px 5%; /* Uso de % em vez de px fixo para melhor responsividade */
   max-width: 1920px;
-  padding: 24px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1000;
 }
 
-.logo{
-  width: 150px;
+.logo {
+  width: 130px;
   cursor: pointer;
-  user-select: none;
+  transition: transform 0.3s ease;
 }
 
-ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 20px;
-    list-style-type: none;
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
 }
 
 .linkNav {
-    font-family: var(--light);
-    color: var(--cor-vinho-escuro);
-    text-decoration: none;
-    font-size: var(--f2);
-    position: relative; 
-    transition: all 0.3s;
+  font-family: var(--light);
+  color: var(--cor-vinho-escuro);
+  text-decoration: none;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.3s;
 }
+
+/* Hover Effect Underline */
 .linkNav::after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background-color: var(--cor-vinho-escuro); 
-    transition: width 0.3s ease-in-out;
-}
-.linkNav:hover {
-    opacity: 0.80; 
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--cor-vinho-escuro);
+  transition: width 0.3s ease-in-out;
 }
 
 .linkNav:hover::after {
-    width: 100%;
+  width: 100%;
+}
+
+/* Menu Toggle (Hamburguer) */
+.menuToggle {
+  display: none; /* Escondido no Desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 0 10px 0;
+  padding: 10px;
+  z-index: 1001;
+}
+
+.hamburger {
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: var(--cor-vinho-escuro);
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: var(--cor-vinho-escuro);
+  transition: all 0.3s ease;
+}
+
+.hamburger::before { top: -8px; }
+.hamburger::after { bottom: -8px; }
+
+/* Animação para o "X" */
+.menuOpen .hamburger { background: transparent; }
+.menuOpen .hamburger::before { transform: rotate(45deg); top: 0; }
+.menuOpen .hamburger::after { transform: rotate(-45deg); bottom: 0; }
+
+.mobileOnly { display: none; }
+
+/* --- RESPONSIVIDADE (Mobile) --- */
+
+@media (max-width: 768px) {
+  .headerContainer {
+    padding: 15px 20px;
+  }
+
+  .menuToggle {
+    display: block; /* Mostra o botão no mobile */
+  }
+
+  .desktopOnly {
+    display: none; /* Esconde o botão solto no mobile */
+  }
+
+  .mobileOnly {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .navMenu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Escondido fora da tela */
+    width: 80%;
+    height: 100vh;
+    background: #fff;
+    box-shadow: -10px 0 20px rgba(0,0,0,0.05);
+    transition: right 0.4s ease-in-out;
+    padding: 100px 40px;
+  }
+
+  .navActive {
+    right: 0; /* Desliza para dentro */
+  }
+
+  .navList {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .linkNav {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
 }
