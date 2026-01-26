@@ -31,10 +31,18 @@
 }
 
 /* Responsividade para Celulares */
+@media (max-width: 820px) {
+  .SectionHero {
+    height: auto; /* Permite crescer se o texto for longo */
+    min-height: 50dvh;
+    padding: 0 12px;
+  }
+}
+/* Responsividade para Celulares */
 @media (max-width: 768px) {
   .SectionHero {
     height: auto; /* Permite crescer se o texto for longo */
-    min-height: 60dvh;
+    min-height: 90dvh;
     padding: 0 12px;
   }
 }
