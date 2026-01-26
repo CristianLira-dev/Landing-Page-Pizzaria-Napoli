@@ -44,7 +44,7 @@ Este não é apenas um site bonito, é um código robusto.
 
 | Mobile View | Seção Depoimentos |
 | :---: | :---: |
-| https://github.com/user-attachments/assets/8293025e-a633-4a4a-96e9-eeeaeb8ed35d | <img width="1919" height="796" alt="image" src="https://github.com/user-attachments/assets/12efd557-ee7c-4220-8b22-9708adbb1749" /> |
+| <img width="467" height="765" alt="image" src="https://github.com/user-attachments/assets/88db752d-033b-4487-85ce-239c81bf09fe" /> | <img width="1919" height="796" alt="image" src="https://github.com/user-attachments/assets/12efd557-ee7c-4220-8b22-9708adbb1749" /> |
 
 ---
 
@@ -53,8 +53,3 @@ Este não é apenas um site bonito, é um código robusto.
 O maior desafio foi sincronizar o **Ciclo de Vida do React** com as animações imperativas do GSAP.
 - **Solução:** Utilizei o `useLayoutEffect` para garantir que o GSAP só iniciasse os cálculos de animação após o DOM estar completamente montado, mas antes de ser exibido ao usuário, garantindo uma fluidez de 60fps.
 
-## 🚀 Como rodar localmente
-
-1. Clone o repositório:
-```bash
-git clone [https://github.com/CristianLira-dev/nome-do-repo-pizzaria.git](https://github.com/CristianLira-dev/nome-do-repo-pizzaria.git)
