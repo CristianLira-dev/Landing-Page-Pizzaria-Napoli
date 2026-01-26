@@ -23,10 +23,6 @@ function PizzaCard({ id, title, description, price, img, alt }) {
           <p className={styles.description}>{description}</p>
           <div className={styles.actionArea}>
             <span className={styles.price}>{price}</span>
-            <button className={styles.buyBtn}>
-              <ShoppingCart />
-              Comprar
-            </button>
           </div>
         </div>
       </div>
