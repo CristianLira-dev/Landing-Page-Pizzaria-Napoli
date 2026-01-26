@@ -93,9 +93,9 @@ function Pizza() {
               ".js-pizza-target",
               {
                 opacity: 1, // A pizza estática (Marguerita ID 2) aparece
-                duration: -10,
+                duration: 0.1,
               },
-              "pouso+=-10",
+              "pouso+=0.1",
             ); // Ajuste fino para aparecer no final do movimento
         }
 

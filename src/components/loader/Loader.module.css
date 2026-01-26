@@ -1,0 +1,39 @@
+@import "../../assets/css/index.css";
+
+.overlay {
+  position: fixed;
+  inset: 0; /* Atalho para top, bottom, left, right: 0 */
+  background-color: #fafafa; /* Cor de fundo que combine com sua marca */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.8s;
+}
+
+.fadeOut {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none; /* Garante que o usuário possa clicar no site após sumir */
+}
+
+.lottieContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  color: var(--cor-vinho-escuro);
+  font-family: var(--bold);
+  margin-top: -20px;
+  letter-spacing: 2px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
