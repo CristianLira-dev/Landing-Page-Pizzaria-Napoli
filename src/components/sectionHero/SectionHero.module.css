@@ -33,9 +33,14 @@
 /* Responsividade para Celulares */
 @media (max-width: 768px) {
   .SectionHero {
-    padding: 40px 0 0 0; /* Menos espaço no mobile */
     height: auto; /* Permite crescer se o texto for longo */
+    min-height: 60dvh;
+    padding: 0 12px;
+  }
+}
+/* Responsividade para Celulares */
+@media (max-width: 400px) {
+  .SectionHero {
     min-height: 80dvh;
-    padding: 0 0 40px 0;
   }
 }

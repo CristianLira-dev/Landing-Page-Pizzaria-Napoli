@@ -65,7 +65,7 @@
   width: 100%;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1240px) {
   .SectionPreparo {
     justify-content: center;
   }
@@ -91,4 +91,10 @@
     width: auto;
     min-width: 180px;
   }
+}
+
+@media (max-width: 992px) {
+  .SectionPreparo {
+    min-height: 60dvh;
+  } 
 }

@@ -1,11 +1,22 @@
 import styles from "./PizzaCard.module.css";
 import { ShoppingCart } from "lucide-react";
 
+// Adicionamos 'id' aos props
+function PizzaCard({ id, title, description, price, img, alt }) {
+  // Verificamos se é a pizza que deve receber a animação voadora
+  const isTarget = id === 2;
 
-function PizzaCard({ title, description, price, img, alt, key }) {
   return (
-    <div key={key} className={styles.cardRelative}>
-      <img src={img} alt={alt} className={styles.popoutImg} />
+    <div className={styles.cardRelative}>
+      {/* Adicionamos uma classe global 'js-pizza-target' se for o ID 2. 
+         A opacidade inicial é 0 apenas para a pizza que sofrerá o "pouso".
+      */}
+      <img
+        src={img}
+        alt={alt}
+        className={`${styles.popoutImg} ${isTarget ? "js-pizza-target" : ""}`}
+        style={isTarget ? { opacity: 0 } : {}}
+      />
       <div className={styles.cardVisual}>
         <div className={styles.cardBody}>
           <h3 className={styles.title}>{title}</h3>

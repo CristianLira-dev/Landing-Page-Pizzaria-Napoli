@@ -5,12 +5,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   pointer-events: none;
   z-index: 50;
   display: flex;
   justify-content: center;
-  align-items: flex-start; 
+  align-items: flex-start;
+  overflow-x: hidden;
 }
 
 .pizzaImage {
@@ -26,8 +27,40 @@
   will-change: transform;
 }
 
-@media (max-width: 768px) {
+/* Remova ou altere o display none se quiser que ela apareça abaixo de 768px */
+@media (max-width: 1240px) {
+
+  .pizzaContainer{
+    position: absolute;
+   height: 200dvh;
+  }
+
   .pizzaImage {
-    display: none;
+    display: block; /* Garante que ela apareça */
+    width: 40vw;    /* Ajusta o tamanho para telas pequenas */
+    margin-top: 30vh;
+  }
+}
+/* Remova ou altere o display none se quiser que ela apareça abaixo de 768px */
+@media (max-width: 768px) {
+
+
+  .pizzaImage {
+    width: 35vw;    /* Ajusta o tamanho para telas pequenas */
+    margin-top: 12vh;
+  }
+}
+/* Remova ou altere o display none se quiser que ela apareça abaixo de 768px */
+@media (max-width: 672px) {
+  .pizzaImage {
+    margin-top: 20vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .pizzaImage {
+    margin-top: 10vh;
+    width: 65vw;    /* Ajusta o tamanho para telas pequenas */
+
   }
 }
