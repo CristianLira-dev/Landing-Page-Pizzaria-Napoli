@@ -10,7 +10,7 @@ function Loader({ loading }) {
         <Lottie
           animationData={pizzaJSON}
           loop={true}
-          style={{ width: 500, height: 500 }}
+          style={{ width: 300, height: 300 }}
         />
         <p className={styles.text}>Terminando de Assar a Pizza...</p>
       </div>
