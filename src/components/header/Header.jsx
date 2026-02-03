@@ -11,7 +11,7 @@ function Header() {
   };
 
   return (
-    <header className={styles.headerContainer}>
+    <header id="header" className={styles.headerContainer}>
       <div className={styles.Divlogo}>
         <img
           src={logoNapoli}
@@ -48,15 +48,6 @@ function Header() {
           <li>
             <a
               className={styles.linkNav}
-              href="#sobre"
-              onClick={() => setMenuOpen(false)}
-            >
-              Sobre Nós
-            </a>
-          </li>
-          <li>
-            <a
-              className={styles.linkNav}
               href="#cardapio"
               onClick={() => setMenuOpen(false)}
             >
@@ -66,21 +57,21 @@ function Header() {
           <li>
             <a
               className={styles.linkNav}
-              href="#contato"
+              href="#sobre"
               onClick={() => setMenuOpen(false)}
             >
-              Contato
+              Sobre Nós
             </a>
           </li>
           {/* O botão de pedido aparece dentro do menu no mobile para melhor UX */}
           <li className={styles.mobileOnly}>
-            <Button>Faça Seu Pedido</Button>
+            <Button>Entre em Contato</Button>
           </li>
         </ul>
       </nav>
 
       <div className={styles.desktopOnly}>
-        <Button>Faça Seu Pedido</Button>
+        <Button>Entre em Contato</Button>
       </div>
     </header>
   );

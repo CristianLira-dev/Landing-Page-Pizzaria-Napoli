@@ -8,7 +8,7 @@ function SectionCards() {
         }
 
     return (
-      <section id="SectionCards" className={styles.SectionCards}>
+      <section id="cardapio" className={styles.SectionCards}>
         <div className={styles.header}>
           <h1 className={styles.tituloSection}>Nossas Pizzas</h1>
           <hr className={styles.line} />

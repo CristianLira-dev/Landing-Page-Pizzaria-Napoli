@@ -4,7 +4,7 @@ import Pizza from "../../assets/images/pizza-SectionSobre.png";
 
 function SectionSobre() {
   return (
-    <section className={styles.sectionSobre} aria-label="Sobre a Empresa">
+    <section id="sobre" className={styles.sectionSobre} aria-label="Sobre a Empresa">
       <div className={styles.container}>
         <img
           src={Pizza}
