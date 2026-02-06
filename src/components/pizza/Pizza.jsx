@@ -29,15 +29,15 @@ function Pizza() {
 
           // Refinamento de posicionamento baseado no tamanho do monitor
           if (width > 1600) {
-            finalY = "-30vh";
+            finalY = "-10vh";
             finalScale = 0.25;
             finalX = "0vw";
           } else if (width > 1366) {
-            finalY = "-38vh";
+            finalY = "-15vh";
             finalScale = 0.27;
             finalX = "0vw";
           } else {
-            finalY = "-45vh";
+            finalY = "-25vh";
             finalScale = 0.3;
             finalX = "1vw";
           }
@@ -67,7 +67,7 @@ function Pizza() {
           // ETAPA 1: MOVIMENTO PARA A ESQUERDA (Limpa o caminho para os textos)
           tl.to(pizzaRef.current, {
             x: "-20vw", // Desvio lateral maior para evitar o H2
-            y: "-5vh",
+            y: "-10vh",
             scale: 0.6,
             rotation: 120,
             duration: 1,
